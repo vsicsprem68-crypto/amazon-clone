@@ -3,6 +3,10 @@
     font-family: Arial;
     border: border-box;
 }
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
 .box-1 { background-image: url('img/h-care.jpg'); }
 .box-2 { background-image: url('img/box2_image.jpg'); }
 .box-3 { background-image: url('img/box3_image.jpg'); }
@@ -287,26 +291,7 @@ ul a {
     width: auto;
     
 }
-/*
-#i1,#i2 {
-    justify-content: space-between;
-    margin-bottom: 10px;
-    height: 124px;
-    width: 140px;
-}
-.sub-img{
-    width: calc(30% - 5px);
-    align-items: center;
-    justify-content: center;
 
-}
-.box-content1{
-    width: 400px;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-    */
     .nav-return a{
         color: white;
         text-decoration: none;
@@ -523,4 +508,16 @@ ul a {
 }
 .phn{
     margin-left: 10px;
+}
+/* Responsiveness */
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
 }
